@@ -9,10 +9,6 @@ const actions = {
   photos
 }
 
-// handleMessage may throw errors
-// consume's callback will wrap each call in a try/catch block and log errors
-// message.error will always include message type and payload in error reports
-
 consume('sync-fb', async (message) => {
   const createRequest = actions[message.type]
   if (createRequest) {
