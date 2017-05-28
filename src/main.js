@@ -6,7 +6,7 @@ import photos from './actions/photos'
 
 const actions = {
   page,
-  photos
+  photos,
 }
 
 consume('sync-fb', async (message) => {
