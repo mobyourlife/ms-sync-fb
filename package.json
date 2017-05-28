@@ -3,7 +3,9 @@
   "version": "5.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": "git@github.com:mobyourlife/ms-sync-fb.git",
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
@@ -12,6 +14,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^20.0.4"
   }
 }
