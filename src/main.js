@@ -9,12 +9,13 @@ const actions = {
   photos,
 }
 
-consume('sync-fb', async (message) => {
+consume('sync-fb', (message) => {
   const createRequest = actions[message.type]
   if (createRequest) {
     const req = createRequest(message.payload)
-    const res = await api(req)
-    message.answer('cache', res)
+    api(req)
+      .then(res => message.answer('cache', res))
+      .catch(err => message.error(err.message, err))
   } else {
     message.error('No valid handler for this message type!')
   }

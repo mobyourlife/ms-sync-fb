@@ -10,7 +10,9 @@
   "repository": "git@github.com:mobyourlife/ms-sync-fb.git",
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
   "dependencies": {
-    "@mobyourlife/amqp-wrapper": "^5.0.2"
+    "@mobyourlife/amqp-wrapper": "^5.1.0",
+    "form-data": "^2.1.4",
+    "node-fetch": "^1.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

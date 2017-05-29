@@ -5,7 +5,7 @@ export default function (message) {
 
   return {
     verb: 'GET',
-    endpoint: `/v2.9/${message.id}`,
+    endpoint: `${message.id}`,
     fields: [
       'id',
       'name',
