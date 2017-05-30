@@ -1,13 +1,7 @@
 import { consume } from '@mobyourlife/amqp-wrapper'
 
 import api from './api'
-import page from './actions/page'
-import photos from './actions/photos'
-
-const actions = {
-  page,
-  photos,
-}
+import actions from './actions'
 
 consume('sync-fb', (message) => {
   const createRequest = actions[message.type]
